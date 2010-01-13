@@ -5,13 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hello-world}
-  s.version = "0.1.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kunto aji"]
-  s.date = %q{2010-01-01}
+  s.date = %q{2010-01-14}
+  s.default_executable = %q{hello-world}
   s.description = %q{longer description of your gem}
   s.email = %q{aji_okay@yahoo.co.id}
+  s.executables = ["hello-world"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -23,6 +25,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "bin/hello-world",
      "hello-world.gemspec",
      "lib/hello-world.rb",
      "test/helper.rb",
@@ -34,8 +37,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{one-line summary of your gem}
   s.test_files = [
-    "test/helper.rb",
-     "test/test_hello-world.rb"
+    "test/test_hello-world.rb",
+     "test/helper.rb"
   ]
 
   if s.respond_to? :specification_version then
@@ -43,12 +46,9 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     else
-      s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     end
   else
-    s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
   end
 end
 
