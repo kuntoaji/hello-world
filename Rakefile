@@ -10,12 +10,11 @@ begin
     gem.email = "aji_okay@yahoo.co.id"
     gem.homepage = "http://github.com/kuntoaji/hello-world"
     gem.authors = ["kunto aji"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.executables = ["hello-world"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
+  puts "hello-world is not available. Install it with: gem install hello-world"
 end
 
 require 'rake/testtask'
