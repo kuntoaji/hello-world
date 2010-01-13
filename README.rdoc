@@ -1,6 +1,6 @@
 = hello-world
 
-Description goes here.
+gem to print output "hello world!". useful for tutorial how to make a ruby gem.
 
 == Note on Patches/Pull Requests
  
